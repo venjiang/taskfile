@@ -1,0 +1,17 @@
+# https://taskfile.dev
+
+version: '3'
+
+output: prefixed
+silent: true
+
+tasks:
+  js:
+    desc: minify javascript
+    cmds:
+      - minify -o public/script.js src/js
+
+  css:
+    desc: minify css
+    cmds:
+      - minify -o public/style.css src/css 

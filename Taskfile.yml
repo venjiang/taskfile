@@ -1,0 +1,17 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+includes:
+  go: go.yml
+  minify: minify.yml
+
+tasks:
+  default:
+    cmds:
+      - echo {{.GREETING}}
+      - task -l 
+    silent: true
