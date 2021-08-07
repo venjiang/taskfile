@@ -8,6 +8,7 @@ vars:
 includes:
   go: go.yml
   minify: minify.yml
+  install: install.yml
 
 tasks:
   default:

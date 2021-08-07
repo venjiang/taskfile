@@ -1,0 +1,42 @@
+# https://taskfile.dev
+
+version: '3'
+
+output: prefixed
+silent: true
+
+tasks:
+  all:
+    desc: install all tools
+    deps: [zoxide]
+    cmds:
+      - echo 'install done.'
+
+  # broot:
+  #   desc: A better way to navigate directories
+  #   summary: |
+  #       A new way to see and navigate directory trees
+  #       https://github.com/Canop/broot
+  #   cmds:
+  #     - brew install broot
+
+  zoxide:
+    desc: A smarter cd command. Supports all major shells
+    summary: |
+        zoxide is a blazing fast replacement for your cd command, inspired by z and z.lua. It keeps track of the directories you use most frequently, and uses a ranking algorithm to navigate to the best match.A new way to see and navigate directory trees
+        https://github.com/ajeetdsouza/zoxide
+        Add this to your configuration (usually ~/.zshrc)
+        eval "$(zoxide init zsh)"
+    cmds:
+      - brew install zoxide
+
+  ranger-zoxide:
+    desc: Easily jump between common directories in ranger
+    summary: |
+        Easily jump between commonly visited directories by running this in ranger
+        https://github.com/jchook/ranger-zoxide
+        You may wish to add a keyboard shortcut to quickly z between common directories. Simply add a binding to your ~/.config/ranger/rc.conf file
+        map cz console z%space
+    cmds:
+      - git clone git@github.com:jchook/ranger-zoxide.git ~/.config/ranger/plugins/zoxide
+
