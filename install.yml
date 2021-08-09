@@ -49,3 +49,10 @@ tasks:
     cmds:
       - brew install bottom
 
+  usql:
+    desc: Universal command-line interface for SQL databases
+    summary: |
+        usql is a universal command-line interface for PostgreSQL, MySQL, Oracle Database, SQLite3, Microsoft SQL Server, and many other databases including NoSQL and non-relational databases!
+        https://github.com/xo/usql
+    cmds:
+      - brew install xo/xo/usql
