@@ -40,3 +40,12 @@ tasks:
     cmds:
       - git clone git@github.com:jchook/ranger-zoxide.git ~/.config/ranger/plugins/zoxide
 
+  bottom:
+    desc: Yet another cross-platform graphical process/system monitor
+    summary: |
+        A cross-platform graphical process/system monitor with a customizable interface and a multitude of features. Supports Linux, macOS, and Windows. Inspired by gtop, gotop, and htop
+        https://github.com/ClementTsang/bottom
+        run bottom using btm
+    cmds:
+      - brew install bottom
+
