@@ -8,17 +8,25 @@ silent: true
 tasks:
   all:
     desc: install all tools
-    deps: [zoxide]
+    deps: [zoxide,ranger-zoxide,bottom]
     cmds:
-      - echo 'install done.'
+      - echo 'install all tools done.'
 
-  # broot:
-  #   desc: A better way to navigate directories
-  #   summary: |
-  #       A new way to see and navigate directory trees
-  #       https://github.com/Canop/broot
-  #   cmds:
-  #     - brew install broot
+  basic:
+    desc: install basic tools
+    deps: [zoxide,ranger-zoxide,bottom]
+    cmds:
+      - echo 'install basic tools done.'
+
+  brew-cn:
+    desc: change brew source to China
+    cmds:
+      - cd "$(brew --repo)"
+      - git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+      - cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+      - git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+      - echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' >> ~/.zshrc
+      - source ~/.zshrc
 
   zoxide:
     desc: A smarter cd command. Supports all major shells
@@ -49,6 +57,14 @@ tasks:
     cmds:
       - brew install bottom
 
+  gitui:
+    desc: Blazing 💥 fast terminal-ui for git written in rust 🦀
+    summary: |
+        GitUI provides you with the comfort of a git GUI but right in your terminal
+        https://github.com/extrawurst/gitui
+    cmds:
+      - brew install gitui
+
   usql:
     desc: Universal command-line interface for SQL databases
     summary: |
@@ -56,3 +72,5 @@ tasks:
         https://github.com/xo/usql
     cmds:
       - brew install xo/xo/usql
+
+
