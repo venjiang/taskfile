@@ -55,6 +55,7 @@ tasks:
         https://github.com/ClementTsang/bottom
         run bottom using btm
     cmds:
+      - brew tap clementtsang/bottom
       - brew install bottom
 
   gitui:
@@ -73,4 +74,43 @@ tasks:
     cmds:
       - brew install xo/xo/usql
 
+  plow:
+    desc: A high-performance HTTP benchmarking tool with real-time web UI and terminal displaying
+    summary: |
+        Plow is a HTTP(S) benchmarking tool, written in Golang. It uses excellent fasthttp instead of Go's default net/http due to its lightning fast performance
+        https://github.com/six-ddc/plow
+    cmds:
+      - brew install plow
+
+  ali:
+    desc: Generate HTTP load and plot the results in real-time
+    summary: |
+        A load testing tool capable of performing real-time analysis, inspired by vegeta and jplot
+        https://github.com/nakabonne/ali
+    cmds:
+      - brew install nakabonne/ali/ali
+
+  hey:
+    desc: HTTP load generator, ApacheBench (ab) replacement, formerly known as rakyll/boom
+    summary: |
+        hey is a tiny program that sends some load to a web application
+        https://github.com/rakyll/hey
+    cmds:
+      - brew install hey
+
+  curlie:
+    desc: The power of curl, the ease of use of httpie
+    summary: |
+        If you like the interface of HTTPie but miss the features of curl, curlie is what you are searching for. Curlie is a frontend to curl that adds the ease of use of httpie, without compromising on features and performance. All curl options are exposed with syntax sugar and output formatting inspired from httpie
+        https://github.com/rakyll/hey
+    cmds:
+      - brew install rs/tap/curlie
+
+  httpstat:
+    desc: It's like curl -v, with colours
+    summary: |
+        Imitation is the sincerest form of flattery
+        https://github.com/davecheney/httpstat
+    cmds:
+      - go install github.com/davecheney/httpstat@latest
 
