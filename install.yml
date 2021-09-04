@@ -114,3 +114,11 @@ tasks:
     cmds:
       - go install github.com/davecheney/httpstat@latest
 
+  upic:
+    desc: 📤uPic is a native, powerful, beautiful and simple picture and file upload tool for macOS
+    summary: |
+        Picture and file upload tool for macOS. - A native, powerful, beautiful and simple
+        https://github.com/gee1k/uPic
+    cmds:
+      - brew instal upic
+        
