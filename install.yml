@@ -121,4 +121,20 @@ tasks:
         https://github.com/gee1k/uPic
     cmds:
       - brew instal upic
+
+  funter:
+    desc: Show hidden files on Mac, hide files with one click, find hidden files by their name 
+    summary: |
+        Funter is a free application to show hidden files, change hidden files visibility in Finder, hide files, copy, move or remove unneeded hidden items
+        https://nektony.com/funter
+    cmds:
+      - brew instal funter
+
+  go2shell:
+    desc: Opens a terminal window to the current directory in Finder
+    summary: |
+        Opens a terminal window to the current directory in Finder
+        https://zipzapmac.com/Go2Shell
+    cmds:
+      - brew instal go2shell
         
