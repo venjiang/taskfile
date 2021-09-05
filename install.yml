@@ -122,6 +122,14 @@ tasks:
     cmds:
       - brew instal upic
 
+  snipaste:
+    desc: Snipaste is a simple but powerful snipping tool, and also allows you to pin the screenshot back onto the screen
+    summary: |
+        Snipaste is a simple but powerful snipping tool, and also allows you to pin the screenshot back onto the screen
+        https://www.snipaste.com/
+    cmds:
+      - brew instal snipaste
+
   funter:
     desc: Show hidden files on Mac, hide files with one click, find hidden files by their name 
     summary: |
